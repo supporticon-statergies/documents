@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './IntegrationPage.css';
+import ComingSoon from './tutorials/ComingSoon';
 
 const ZohoPage = () => {
   const { option } = useParams();
@@ -11,20 +12,17 @@ const ZohoPage = () => {
     ).join(' ');
   };
 
-  // Coming Soon Content
-  const renderComingSoon = () => (
-    <div className="coming-soon-container">
-      <div className="coming-soon-icon">🚀</div>
-      <h2 className="coming-soon-title">Coming Soon</h2>
-      <p className="coming-soon-text">
-        This feature is currently under development and will be available soon.
-      </p>
-      <div className="coming-soon-description">
-        <p>We're working hard to bring you <strong>{getTitle()}</strong> for Zoho integration.</p>
-        <p>Stay tuned for updates!</p>
-      </div>
-    </div>
-  );
+  // Render content based on the selected option
+  const renderContent = () => {
+    // Add your Zoho-specific tutorials here
+    // Example:
+    // case 'custom-app-integration':
+    //   return <ZohoCustomAppIntegration />;
+    // case 'login':
+    //   return <ZohoLoginTutorial />;
+    
+    return <ComingSoon featureName={getTitle()} />;
+  };
 
   return (
     <div className="integration-page">
@@ -43,7 +41,7 @@ const ZohoPage = () => {
         </div>
 
         <div className="content-card">
-          {renderComingSoon()}
+          {renderContent()}
         </div>
       </div>
     </div>
