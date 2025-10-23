@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import './IntegrationPage.css';
 import CustomAppIntegration from './tutorials/CustomAppIntegration';
 import LoginTutorial from './tutorials/LoginTutorial';
+import KBArticleTutorial from './tutorials/KBArticleTutorial';
 import ComingSoon from './tutorials/ComingSoon';
 
 const FreshdeskPage = () => {
@@ -21,6 +22,8 @@ const FreshdeskPage = () => {
         return <CustomAppIntegration />;
       case 'login':
         return <LoginTutorial />;
+      case 'kb-docs':
+        return <KBArticleTutorial />;
       default:
         return <ComingSoon featureName={getTitle()} />;
     }
@@ -28,7 +31,7 @@ const FreshdeskPage = () => {
 
   // Check if the option should show header
   const shouldShowHeader = () => {
-    return option !== 'custom-app-integration' && option !== 'login';
+    return option !== 'custom-app-integration' && option !== 'login' && option !== 'kb-docs';
   };
 
   return (
