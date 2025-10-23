@@ -66,7 +66,7 @@ const Home = () => {
               <li>Team Collaboration</li>
             </ul>
             <button className="feature-button zoho-button">
-              Explore Zoho
+              Coming Soon
             </button>
           </div>
 
@@ -90,7 +90,7 @@ const Home = () => {
               <li>Analytics & Reporting</li>
             </ul>
             <button className="feature-button zendesk-button">
-              Explore Zendesk
+              Coming Soon
             </button>
           </div>
         </div>
