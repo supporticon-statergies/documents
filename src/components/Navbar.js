@@ -13,8 +13,7 @@ const Navbar = () => {
     { name: 'KB Docs', path: '/freshdesk/kb-docs' },
     { name: 'Internal Article', path: '/freshdesk/internal-article' },
     { name: 'KT Article', path: '/freshdesk/kt-article' },
-    { name: 'QA POC', path: '/freshdesk/qa-poc' },
-    { name: 'DEV POC', path: '/freshdesk/dev-poc' },
+   
     { name: 'New Response', path: '/freshdesk/new-response' },
     { name: 'Sent QA', path: '/freshdesk/sent-qa' },
     { name: 'Closed Ticket', path: '/freshdesk/closed-ticket' },
