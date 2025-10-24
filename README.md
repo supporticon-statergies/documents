@@ -392,6 +392,25 @@ helpdude-application/
 <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
 ```
 
+### **Change Favicon**
+```javascript
+// 1. Replace Icon.png in public/ folder with your new favicon
+// 2. Update public/index.html if you want different icon file
+<link rel="icon" href="%PUBLIC_URL%/Icon.png" />
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/Icon.png" />
+
+// 3. Update public/manifest.json
+{
+  "icons": [
+    {
+      "src": "Icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+```
+
 ### **Add New Platform (Zoho/Zendesk)**
 ```javascript
 // 1. Create ZohoPage.js or ZendeskPage.js similar to FreshdeskPage.js
