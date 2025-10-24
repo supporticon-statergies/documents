@@ -4,7 +4,7 @@ const CustomAppIntegration = () => {
   return (
     <div className="tutorial-content">
       <div className="tutorial-intro">
-        <h2>Install Freshdesk Custom App (HelpDude)</h2>
+        <h2>Install Freshdesk Custom App HelpDude</h2>
         <p className="intro-text">
           Follow these step-by-step instructions to install and configure the HelpDude app in your Freshdesk account.
         </p>
@@ -23,7 +23,8 @@ const CustomAppIntegration = () => {
           </div>
           <div className="checklist-item">
             <span className="check-icon">✓</span>
-            <span>Freshdesk subdomain (example: yourcompany.freshdesk.com)</span>
+            <span>Freshdesk subdomain (example: yourcompany.freshdesk
+              .com)</span>
           </div>
           <div className="checklist-item">
             <span className="check-icon">✓</span>

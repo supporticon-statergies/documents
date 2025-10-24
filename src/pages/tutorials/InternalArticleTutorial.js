@@ -64,23 +64,23 @@ const InternalArticleTutorial = () => {
               </div>
             </div>
             <div className="step-body">
-              <div className="step-content-modern step-content-centered">
-                <p>Open any Confluence article page and look at the address bar to find:</p>
+              <div className="step-content-modern">
+                <p>Open any Confluence article page and look at the address bar to find the required information:</p>
                 <ul>
-                  <li><strong>Confluence Base URL:</strong> The main domain (e.g., https://your-domain.atlassian.net)</li>
-                  <li><strong>Space Key:</strong> Found in the URL path (e.g., /wiki/spaces/<strong>SPACE</strong>/...)</li>
+                  <li><strong>Confluence Base URL:</strong> The main domain</li>
+                  <li><strong>Space Key:</strong> Found in the URL path</li>
                 </ul>
                 <div className="tip-box-modern">
-                 
-                  <ul style={{ marginTop: '0.5rem' }}>
-                    <li><strong>Base URL:</strong> https://shanmugasudhan123.atlassian.net</li>
-                    <li><strong>Space Key:</strong> ~7120252f63d3c55047f7929d15684a3c2cd</li>
-                  </ul>
+                  <div className="tip-icon">💡</div>
+                  <div>
+                    <p><strong>Example:</strong></p>
+                    <p>Base URL: https://shanmugasudhan123.atlassian.net</p>
+                    <p>Space Key: ~7120252f63d3c55047f7929d15684a3c2cd</p>
+                  </div>
                 </div>
               </div>
               <div className="step-image-modern">
                 <img src={`${process.env.PUBLIC_URL}/images/internal_2.png`} alt="Configuration Form" />
-                
               </div>
             </div>
           </div>

@@ -42,17 +42,18 @@ const KTArticleTutorial = () => {
         </div>
         <div className="step-body">
           <div className="step-content-modern">
-            <p>Open any Jira article page and look at the address bar to find:</p>
+            <p>Open any Jira article page and look at the address bar to find the required information:</p>
             <ul>
-              <li><strong>Jira Base URL:</strong> The main domain (e.g., https://your-domain.atlassian.net)</li>
-              <li><strong>Project Key:</strong> Found in the URL path (e.g., /browse/<strong>KAN</strong>-14)</li>
+              <li><strong>Jira Base URL:</strong> The main domain</li>
+              <li><strong>Project Key:</strong> Found in the URL path</li>
             </ul>
             <div className="tip-box-modern">
-             
-              <ul style={{ marginTop: '0.5rem' }}>
-                <li><strong>Jira Base URL:</strong> https://shanmugasudhan123.atlassian.net</li>
-                <li><strong>Project Key:</strong> KAN</li>
-              </ul>
+              <div className="tip-icon">💡</div>
+              <div>
+                <p><strong>Example:</strong></p>
+                <p>Jira Base URL: https://shanmugasudhan123.atlassian.net</p>
+                <p>Project Key: KAN</p>
+              </div>
             </div>
           </div>
           <div className="step-image-modern">

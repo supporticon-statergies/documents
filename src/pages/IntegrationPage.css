@@ -400,6 +400,9 @@
 .step-content-modern {
   color: var(--text-secondary);
   line-height: 1.8;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .step-content-modern ol {
@@ -432,6 +435,8 @@
 .step-content-modern ul li {
   margin-bottom: 0.5rem;
   position: relative;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .step-content-modern ul li::before {
@@ -439,6 +444,12 @@
   color: var(--primary-yellow);
   position: absolute;
   left: -1.5rem;
+}
+
+.step-content-modern p {
+  margin: 1rem 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .step-content-modern strong {
@@ -468,7 +479,7 @@
 
 .tip-box-modern {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 140, 0, 0.05) 100%);
   border: 2px solid rgba(255, 215, 0, 0.3);
@@ -482,6 +493,17 @@
 .tip-icon {
   font-size: 1.5rem;
   flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.tip-box-modern div {
+  flex: 1;
+}
+
+.tip-box-modern p {
+  margin: 0.25rem 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .tip-box-modern strong {
@@ -743,10 +765,29 @@
   .step-body {
     grid-template-columns: 1fr;
     padding: 1.5rem;
+    gap: 1.5rem;
   }
 
   .step-image-modern {
     position: static;
+  }
+
+  .tip-box-modern {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .tip-icon {
+    margin-top: 0;
+  }
+
+  .step-content-modern ul {
+    padding-left: 1.5rem;
+  }
+
+  .step-content-modern ul li::before {
+    left: -1.25rem;
   }
 
   .section-header-modern h3 {
