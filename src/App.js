@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import FreshdeskPage from './pages/FreshdeskPage';
 import ZohoPage from './pages/ZohoPage';
@@ -10,6 +11,7 @@ import './App.css';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>
