@@ -7,7 +7,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-content">
           <img src={`${process.env.PUBLIC_URL}/help_dude.png`} alt="HelpDude" className="hero-logo-image" />
-          <p className="hero-subtitle">Catalyst for Excellence</p>
+          <p className="hero-subtitle">Support Made Simple</p>
           <p className="hero-description">
             Streamline your customer support workflow with powerful integrations
             for Freshdesk, Zoho, and Zendesk platforms.
@@ -39,7 +39,10 @@ const Home = () => {
               <li>QA & DEV POC Support</li>
               <li>Admin Dashboard</li>
             </ul>
-            <button className="feature-button freshdesk-button">
+            <button 
+              className="feature-button freshdesk-button"
+              onClick={() => window.open('https://www.freshworks.com/apps/helpdude_1/', '_blank', 'noopener,noreferrer')}
+            >
               Explore Freshdesk
             </button>
           </div>

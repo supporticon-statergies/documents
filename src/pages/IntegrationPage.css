@@ -666,6 +666,7 @@
 @media (max-width: 768px) {
   .integration-page {
     padding: 1rem 0;
+    margin-top: 0;
   }
 
   .page-header {

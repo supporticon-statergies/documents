@@ -7,6 +7,9 @@ import KBArticleTutorial from './tutorials/KBArticleTutorial';
 import InternalArticleTutorial from './tutorials/InternalArticleTutorial';
 import KTArticleTutorial from './tutorials/KTArticleTutorial';
 import NewResponseTutorial from './tutorials/NewResponseTutorial';
+import QAPOCTutorial from './tutorials/QAPOCTutorial';
+import ClosedTicketTutorial from './tutorials/ClosedTicketTutorial';
+import AdminTutorial from './tutorials/AdminTutorial';
 import ComingSoon from './tutorials/ComingSoon';
 
 const FreshdeskPage = () => {
@@ -33,6 +36,12 @@ const FreshdeskPage = () => {
         return <KTArticleTutorial />;
       case 'new-response':
         return <NewResponseTutorial />;
+      case 'sent-qa':
+        return <QAPOCTutorial />;
+      case 'closed-ticket':
+        return <ClosedTicketTutorial />;
+      case 'admin':
+        return <AdminTutorial />;
       default:
         return <ComingSoon featureName={getTitle()} />;
     }
@@ -40,7 +49,7 @@ const FreshdeskPage = () => {
 
   // Check if the option should show header
   const shouldShowHeader = () => {
-    return option !== 'custom-app-integration' && option !== 'login' && option !== 'kb-docs' && option !== 'internal-article' && option !== 'kt-article' && option !== 'new-response';
+    return option !== 'custom-app-integration' && option !== 'login' && option !== 'kb-docs' && option !== 'internal-article' && option !== 'kt-article' && option !== 'new-response' && option !== 'sent-qa' && option !== 'closed-ticket' && option !== 'admin';
   };
 
   return (
