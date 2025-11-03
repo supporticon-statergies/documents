@@ -10,6 +10,7 @@ import NewResponseTutorial from './tutorials/NewResponseTutorial';
 import QAPOCTutorial from './tutorials/QAPOCTutorial';
 import ClosedTicketTutorial from './tutorials/ClosedTicketTutorial';
 import AdminTutorial from './tutorials/AdminTutorial';
+import AnalyticsDashboard from './tutorials/AnalyticsDashboard';
 import ComingSoon from './tutorials/ComingSoon';
 
 const FreshdeskPage = () => {
@@ -42,6 +43,8 @@ const FreshdeskPage = () => {
         return <ClosedTicketTutorial />;
       case 'admin':
         return <AdminTutorial />;
+      case 'analytics':
+        return <AnalyticsDashboard />;
       default:
         return <ComingSoon featureName={getTitle()} />;
     }
@@ -49,7 +52,7 @@ const FreshdeskPage = () => {
 
   // Check if the option should show header
   const shouldShowHeader = () => {
-    return option !== 'custom-app-integration' && option !== 'login' && option !== 'kb-docs' && option !== 'internal-article' && option !== 'kt-article' && option !== 'new-response' && option !== 'sent-qa' && option !== 'closed-ticket' && option !== 'admin';
+    return option !== 'custom-app-integration' && option !== 'login' && option !== 'kb-docs' && option !== 'internal-article' && option !== 'kt-article' && option !== 'new-response' && option !== 'sent-qa' && option !== 'closed-ticket' && option !== 'admin' && option !== 'analytics';
   };
 
   return (

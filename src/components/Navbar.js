@@ -17,7 +17,8 @@ const Navbar = () => {
     { name: 'New Response', path: '/freshdesk/new-response' },
     { name: 'Sent QA', path: '/freshdesk/sent-qa' },
     { name: 'Closed Ticket', path: '/freshdesk/closed-ticket' },
-    { name: 'Admin', path: '/freshdesk/admin' }
+    { name: 'Admin', path: '/freshdesk/admin' },
+    { name: 'Analytics Dashboard', path: '/freshdesk/analytics' }
   ];
 
   const zohoOptions = [
