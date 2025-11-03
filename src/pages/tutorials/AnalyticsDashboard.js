@@ -192,9 +192,14 @@ const AnalyticsDashboard = () => {
           </div>
           <div className="trouble-card">
             <div className="trouble-icon">📈</div>
-            <h4>Why Touchpoint % Can Exceed 100%</h4>
-            <p>If agents generate multiple HelpDude drafts for a single response (e.g., trying different approaches), the touchpoint count can exceed the total response count, resulting in >100%.</p>
+            <h4>Why Touchpoint Percentage Can Exceed 100%</h4>
+            <p>
+              If agents generate multiple HelpDude drafts for a single response (e.g., trying different approaches), 
+              the touchpoint count can exceed the total response count, resulting in values above 100%.
+            </p>
+            
           </div>
+          
           <div className="trouble-card">
             <div className="trouble-icon">⏱️</div>
             <h4>Response Time Calculation</h4>
